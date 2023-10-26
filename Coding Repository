@@ -1,0 +1,31 @@
+import os
+import pygame
+from pygame.locals import * 
+
+from replit import audio
+
+os.system('pip install pygame')
+os.system('pip install replit')
+
+pygame.init()
+
+pygame.display.set_caption("Squirrel Game")
+
+WIDTH, HEIGHT = 2550, 3300
+FPS = 60
+PLAYER_VEL = 5
+
+window = pygame.display.set_mode((WIDTH, HEIGHT))
+
+source = audio.play_file("trap-future-bass-royalty-free-music-167020.mp3")
+
+
+
+display_width = 800
+display_height = 600
+Display = pygame.display.set_mode((display_width, display_height))
+black = (0,0,0)
+white = (255,255,255)
+Img = pygame.image.load("Background.png")
+Display.blit(Img, (x,y))
+
